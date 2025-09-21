@@ -20,10 +20,10 @@ class ColorKey {
 
 extension ColorX on Color {
   String get colorHexString {
-    final red = (r * 255).toInt().toRadixString(16).padLeft(2, '0');
-    final green = (g * 255).toInt().toRadixString(16).padLeft(2, '0');
-    final blue = (b * 255).toInt().toRadixString(16).padLeft(2, '0');
-    final alpha = (a * 255).toInt().toRadixString(16).padLeft(2, '0');
+    final red = red.toRadixString(16).padLeft(2, '0');
+    final green = green.toRadixString(16).padLeft(2, '0');
+    final blue = blue.toRadixString(16).padLeft(2, '0');
+    final alpha = alpha.toRadixString(16).padLeft(2, '0');
 
     return '$alpha$red$green$blue';
   }
